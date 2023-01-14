@@ -20,7 +20,7 @@ public class UrzadzeniePomiarowe {
     private String producent;
     private int zakresPomiarowy;
     private int dokladnoscPomiarowa;
-    private String lokalizacjaSprzetu;
+    private String lokalizacjaUrzadzenia;
 
     @OneToMany(mappedBy = "urzadzeniePomiarowe")
     @ToString.Exclude

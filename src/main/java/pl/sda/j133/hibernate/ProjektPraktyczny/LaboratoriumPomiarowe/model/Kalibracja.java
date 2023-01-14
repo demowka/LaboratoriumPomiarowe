@@ -33,9 +33,6 @@ public class Kalibracja {
     @CreationTimestamp
     private  LocalDate terminWaznosci;
 
-    @OneToMany(mappedBy = "kalibracja")
-    @ToString.Exclude
-    @EqualsAndHashCode.Exclude
-    private Set<Kalibracja> kalibracje;
+
 
 }

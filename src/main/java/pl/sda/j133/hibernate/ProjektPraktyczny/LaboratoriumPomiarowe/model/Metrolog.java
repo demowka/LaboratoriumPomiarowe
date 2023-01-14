@@ -12,6 +12,7 @@ import java.util.Set;
 @AllArgsConstructor
 public class Metrolog {
 
+    private long id;
     private String imie;
     private String nazwisko;
 
