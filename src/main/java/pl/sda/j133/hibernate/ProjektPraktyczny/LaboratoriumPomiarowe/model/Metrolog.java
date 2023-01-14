@@ -12,6 +12,8 @@ import java.util.Set;
 @AllArgsConstructor
 public class Metrolog {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String imie;
     private String nazwisko;
