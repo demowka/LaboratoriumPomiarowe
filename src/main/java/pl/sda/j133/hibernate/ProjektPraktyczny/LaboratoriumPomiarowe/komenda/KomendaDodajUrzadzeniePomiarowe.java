@@ -23,12 +23,10 @@ public class KomendaDodajUrzadzeniePomiarowe implements Komenda {
         String producent = Komenda.SCANNER.nextLine();
 
         System.out.println("Podaj zakres pomiarowy:");
-        String zakresPomiarowyString = Komenda.SCANNER.nextLine();
-        int zakresPomiarowy = Integer.parseInt(zakresPomiarowyString);
+        String zakresPomiarowy = Komenda.SCANNER.nextLine();
 
         System.out.println("Podaj dokładność pomiarową:");
-        String dokladnoscPomiarowaString = Komenda.SCANNER.nextLine();
-        int dokladnoscPomiarowa = Integer.parseInt(dokladnoscPomiarowaString);
+        String dokladnoscPomiarowa = Komenda.SCANNER.nextLine();
 
         System.out.println("Jaka jest lokalizacja urządzenia:");
         String lokalizacjaUrzadzenia = Komenda.SCANNER.nextLine();

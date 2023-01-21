@@ -4,9 +4,11 @@ import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.DataBase.Da
 import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.model.Kalibracja;
 import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.model.Metrolog;
 import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.model.UrzadzeniePomiarowe;
+import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.model.WynikKalibracji;
 
 import java.lang.reflect.Member;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 public class KomendaDodajKalibracje implements Komenda {
@@ -46,8 +48,9 @@ public class KomendaDodajKalibracje implements Komenda {
         System.out.println("Podaj urządzenie pomiarowe:");
         String urzadzeniePomiarowe = Komenda.SCANNER.nextLine();
 
-        System.out.println("Podaj wynik kalibracji:");
-        String wynikKalibracji = Komenda.SCANNER.nextLine();
+        System.out.println("Wybierz wynik kalibracji:");
+        String wynikKalibracjiWybierz = Komenda.SCANNER.nextLine();
+        WynikKalibracji wynikKalibracji = WynikKalibracji.valueOf(wynikKalibracjiWybierz);
 
         System.out.println("Podaj metrologa wykonującego kalibracje:");
         String metrolog = Komenda.SCANNER.nextLine();

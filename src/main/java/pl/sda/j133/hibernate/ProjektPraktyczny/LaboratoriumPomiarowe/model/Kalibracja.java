@@ -24,7 +24,7 @@ public class Kalibracja {
     @EqualsAndHashCode.Exclude
     private UrzadzeniePomiarowe urzadzeniePomiarowe;
 
-    private String wynikKalibracji;
+    private WynikKalibracji wynikKalibracji;
 
     @ManyToOne
     @EqualsAndHashCode.Exclude

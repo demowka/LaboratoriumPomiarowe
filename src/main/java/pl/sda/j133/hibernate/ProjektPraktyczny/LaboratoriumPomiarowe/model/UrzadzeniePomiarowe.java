@@ -18,8 +18,8 @@ public class UrzadzeniePomiarowe {
     private String nazwa;
     private String numerSeryjny;
     private String producent;
-    private int zakresPomiarowy;
-    private int dokladnoscPomiarowa;
+    private String zakresPomiarowy;
+    private String dokladnoscPomiarowa;
     private String lokalizacjaUrzadzenia;
 
     @OneToMany(mappedBy = "urzadzeniePomiarowe")

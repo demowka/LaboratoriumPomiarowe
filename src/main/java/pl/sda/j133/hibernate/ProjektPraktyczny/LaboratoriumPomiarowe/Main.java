@@ -1,9 +1,6 @@
 package pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe;
 
-import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.komenda.Komenda;
-import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.komenda.KomendaDodajKalibracje;
-import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.komenda.KomendaDodajMetrologa;
-import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.komenda.KomendaDodajUrzadzeniePomiarowe;
+import pl.sda.j133.hibernate.ProjektPraktyczny.LaboratoriumPomiarowe.komenda.*;
 
 import java.util.List;
 
@@ -13,7 +10,10 @@ public class Main {
     List<Komenda> listaKomend = List.of(
             new KomendaDodajUrzadzeniePomiarowe(),
             new KomendaDodajMetrologa(),
-            new KomendaDodajKalibracje()
+            new KomendaDodajKalibracje(),
+            new KomendaListaUrzadzeniaPomiarowe(),
+            new KomendaListaMetrolog(),
+            new KomendaListaKalibracje()
 
     );
 
